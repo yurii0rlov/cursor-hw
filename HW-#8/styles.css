@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+@font-face{ 
+	font-family: 'ProductSans-Regular';
+	src: url('fonts/fontsfree-net-productsans-bold-webfont.eot');
+	src: url('fonts/fontsfree-net-productsans-bold-webfont.eot') format('eot'),
+	     url('fonts/fontsfree-net-productsans-bold-webfont.woff') format('woff'),
+	     url('fonts/fontsfree-net-productsans-bold-webfont.ttf') format('truetype'),
+	     url('fonts/fontsfree-net-productsans-bold-webfont.svg#webfont') format('svg');
+}
+@media(max-width:200px){
+    html{
+        font-size: 50%;
+    }
+    }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5.735em;
+}
+.getappblock,
+.textblock{
+    background: #F4F6F9;
+    padding: 2.125em 1.25em 3.6875em 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logoball{
+    width: 1.5em;
+    height: 1.4375em;
+}
+.logotext{
+    font-family: 'ProductSans-Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    letter-spacing: -0.02em;
+    color: #5282F0;
+}
+.apptitletext{
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+font-size: 1.875em;
+line-height: 1.33333em;
+color: #333333;
+text-align: center;
+margin-bottom: 1.1em;
+}
+.appsdescription{
+font-family: 'Lato', sans-serif;
+line-height: 1.4375em;
+text-align: center;
+color: #4F4F4F;
+margin-bottom: 3.125em;
+white-space: pre-wrap;
+}
+.appstorebuttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media (min-width:371px) {
+    .gplaybtn{
+        margin-left: 2.4em;
+    }
+}
+@media (max-width:360px) {
+    .gplaybtn{
+        margin: 1em;
+    }
+}
+.appstorebutton{
+    width: 9.125em;
+}
+.apptitletext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media(min-width:720px){
+    .getappblock{
+        background-image: url(img/background1block.png);
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: 100%;
+        background-size: 62.0625em 41.75em;
+        padding: 3.9375em 0 10.25em 10.1875em;
+        align-items: flex-start;
+        justify-content: flex-start;
+        white-space: pre-line;
+    }
+    .apptitletext,
+    .appsdescription{
+    text-align:start;
+    }
+    .appstorebuttons{
+        justify-content: flex-start;
+    }
+}
+@media(max-width:1250px) {
+    .getapptextandbuttons{
+        background: linear-gradient(180deg, #F4F6F9, transparent );
+    }
+}
+.textblock{
+    background: #ffffff;
+    padding: 3.375em 1.25em 1.375em 1.25em;
+    justify-content: space-between;
+}
+.bluetext{
+    font-family: 'Lato', sans-serif;
+font-weight: bold;
+line-height: 1.3125em;
+color: #00ADEE;
+}
+.titletext{
+    font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-size: 1.75em;
+line-height: 1.32143em;
+color: #333333;
+text-align: center;
+margin:1.6875em 0;
+}
+.description,
+.highlights{
+    margin-bottom: 1.6875em;
+}
+
+.backgroundimg{
+    background: linear-gradient(180deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), url(img/backgroundronaldo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+.appnotification{
+background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+.goalslivestreams{
+    z-index: 1;
+    bottom: 1em;
+    left: 24%;
+    position: relative;
+    border-radius: 2.74531px;
+}
+.notification{
+    max-width: 77%;
+    display: flex;
+    z-index: 3;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+border-radius: 4px;
+margin: 4.375em 0 0 1.25em;
+}
+.goalslivestreams{
+    max-width: 77%;
+    display: flex;
+}
+.goalslivestreams{
+    z-index: 2;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+}
+.contentblock{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:720px){
+    .contentblock{
+        flex-direction: row-reverse;
+    }
+    .textblock{
+        align-items: flex-start;
+        width: 45%;
+        justify-content: space-between;
+        margin-top: 5%;
+        padding:0 0 0 2em;
+    }
+    .appsdescription{
+        padding-right: 25%;
+    }
+    .notification,
+    .goalslivestreams{
+        width: 50%;
+    }
+    .backgroundimg{
+    background:linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), url(img/backgroundronaldohw.png);
+    background-repeat: no-repeat;
+    width: 55%;
+    background-size: cover;
+    max-height: 10%;
+    display: block;
+    }
+    .titletext{
+        text-align: start;
+    }
+    .footballexpirience :last-child{
+        margin-bottom: 20%;
+    }
+}
+.salahscores{
+    width: 100%;
+}
+@media(min-width:720px){
+    .getappblock :last-child{
+        background-color: transparent;
+    }
+    .userfriendlyblock{
+        background-image: url(img/salahscores.png);
+        background-size: 100%;
+        background-position-x: right;
+        background-position-y: center;
+        height: max-content;
+        background-repeat: no-repeat;
+    }
+    .mobileimagesalahscores{
+        display: none;
+    }
+    .userfriendlyblock{
+        flex-direction: row;
+    }
+    .userfriendlyblocktext :last-child{
+        margin-bottom: 24%;
+    }
+}
+.featureslist{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 3.5em;
+    row-gap: 1em;
+    grid-auto-flow: row dense;
+    
+}
+.featuresblock,
+.feature{
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featureicon{
+    width: 1.875em;
+    height: 1.875em;
+    margin-bottom: 1em;
+}
+.descriptionfeature{
+    margin: 0;
+    padding: 0 1.25em
+}
+@media(min-width:1420px){
+    .userfriendlyblock{
+        background-size: 80%;
+    }
+}
+@media(min-width:720px){
+    .featureslist{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3em;
+    }
+    .featureicon{
+        margin:0 0 1em 1.25em;
+    }
+    .feature{
+        align-items:flex-start;
+        background: none;
+        justify-content: space-between;
+    }
+    .descriptionfeature{
+        margin-bottom: auto;
+    }
+    .featuresblock{
+        background: url(img/featuresbackground.png);
+        background-size: cover;
+        background-position-y: center;
+        justify-content: center;
+    }
+   .feature path{
+       fill: #ffffff;
+   }
+   .descriptionfeature{
+       color: #FFFFFF;
+   }
+   div.featuresblock .titletext{
+       margin: 4.625em 0 3.625em 0;
+       color: #FFFFFF;
+   }
+   .descriptionfeature::before {
+    content: "•";
+  }
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #828282;
+    border-radius: 0.25em;
+    padding: 0.9375em 0.5125em 1.5em 1.0625em;
+    flex: 1 1;
+}
+.reviewer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: center;
+}
+.twitter{
+    margin:auto 0 auto auto;
+    cursor: pointer;
+}
+.reviewer img{
+    width: 1.875em;
+}
+.reviewer svg{
+    width: 0.9375em;
+}
+.name{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    line-height: 1.1875em;
+    color: #333333;
+    padding-left: 0.6875em;
+}
+.reviewtext{
+    padding-top: 1.2857em;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    color: #4F4F4F;
+}
+.desctopreview{
+    display: none;
+}
+.mobilereview{
+    width: 100%;
+    position: relative;
+}
+.reviews{
+    padding: 2.4375em 1.5625em 2.0625em 1.5625em;
+}
+.nextreviewbutton{
+    position: absolute;
+    width: 2.9375em;
+    height: 2.9375em;
+    margin: 0;
+    z-index: 2;
+    margin-top: 2em;
+    right:.5em;
+}
+.reviewstitle{
+    text-align: center;
+    margin: 1.8em 0 0 0;
+}
+.navidots{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    border-radius: 50%;
+    width: 0.6875em;
+    height: 0.6875em;
+    cursor: pointer;
+}
+.dot1{
+    background: #828282;
+}
+.dot2{
+    background: #979595;
+}
+.dot3{
+    background: #B2B0B0;
+}
+.dot4{
+    background: #CDCBCB;
+}
+.dot5{
+    background: #E2E1E1;
+}
+.dot6{
+    background: #EEEEEE;
+}
+.dot7{
+    background: #F7F7F7;
+}
+.dot + .dot{
+    margin-left: 0.6875em;;
+}
+.prereviewbutton{
+    display: none;
+    cursor: pointer;
+}
+.reviewsblock{
+    padding-bottom: 4.4em;
+}
+
+@media (min-width:720px) {
+    .desctopreview,
+    .prereviewbutton{
+        display:flex;
+    }
+    .reviews{
+        justify-content: center;
+        padding: 2.4375em 0 2.0625em 0;
+        position: relative;
+    }
+    .review + .review{
+        margin-left: .5em;
+    }
+
+    .reviewsblock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3.125em;
+        width: 100%;
+    }
+    .gradient {
+        display: inline-block;
+        position: relative;    
+        line-height: 0;
+    }
+    .gradient:after {
+        content: "";
+        display: block;    
+        width: 100%;
+        height: 100%;    
+        position: absolute;
+        top: 0;      
+        left: 0;   
+        background: transparent;
+        background-image: linear-gradient(270deg, #FFFFFF 14.84%, rgba(255, 255, 255, 0) 22.7%),linear-gradient(90deg, #FFFFFF 14.84%, rgba(255, 255, 255, 0) 22.7%);
+        opacity: 0.8;
+    }
+    .prereviewbutton{
+        position: absolute;
+        width: 2.9375em;
+        height: 2.9375em;
+        margin: 0;
+        z-index: 2;
+        margin-top: 4em;
+        left:12%;
+        transform: rotateY(180deg);
+    }
+    .nextreviewbutton{
+        margin-top: 4em;
+        right:12%;
+        cursor: pointer;
+    }
+}
+@media (min-width:856px){
+    .reviews{
+        gap: 2.25em;
+    }
+}
+.chanells{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FAFAFA;
+}
+.channelsimages{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 4.4375em;
+}
+.sportstv{
+    width: 9.1875em;
+    height: 6.125em;
+    cursor: pointer;
+}
+.sports{
+    width: 6.375em;
+    height: 2em;
+    cursor: pointer;
+}
+.nbcsports{
+    width: 4.3125em;
+    height: 3.625em;
+    cursor: pointer;
+}
+.designertech{
+    width: 6.875em;
+    height: 2em;
+    cursor: pointer;
+}
+.designnews{
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+.skysports{
+    width: 13.125em;
+    height: 2.125em;
+    cursor: pointer;
+}
+.chanells p{
+    margin-bottom: 2.8em;
+}
+.getupteam{
+    padding: 1.25em 1.25em 3em 1.25em;
+}
+.getupteamtitle{
+    margin: 0 0 1em 0;
+}
+.imagecontainer{
+        background-repeat: no-repeat;
+        display: block;
+}
+.watchmatchesnowq{
+    width: 100%;
+}
+@media (min-width:720px) {
+    .imagecontainer{
+    background: url(img/getupclosedesctop.png);
+    background-repeat: no-repeat;
+    width: 55%;
+    background-position:center;
+    background-size: cover;
+    }
+    .watchmatchesnowq{
+        display: none;
+    }
+    .bottomgplaybutton{
+        margin-left: 0;
+    }
+}
+@media (min-width: 820px){
+    .bottomgplaybutton{
+        margin-left: 2.4em;
+    }
+}
+footer .logo{
+    margin: 0 0 0.7em 0;
+    justify-content: flex-start;
+}
+footer{
+    padding: 2.5625em  1.25em 2.8125em 1.25em;
+    background: #00ADEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottomlogotext{
+    color: #FFFFFF;
+}
+.social{
+    width: 1.5625em;
+    height: 1.5625em;
+    cursor: pointer;
+}
+nav{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+nav a{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    line-height: 1.3125em;
+    color: #FFFFFF;
+}
+.social + .social{
+    margin-left: 1em;
+}
+@media (min-width:720px) {
+    footer{
+        flex-direction: row; 
+        align-items: center;
+    }
+    nav{
+        margin-top: 0;
+        order:1;
+    }
+    .social svg{
+        margin: 0;
+    }
+    .socials{
+        order: 3;
+    }
+    footer .logo{
+        margin: 0 0 0 0 ;
+    }
+}
+
+.appstorebutton:hover{
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.29);
+}
+.learnmore:hover{
+    color: #0092c7;
+    cursor: pointer;
+}
+.dot:hover{
+    background: #828282;
+}
+.sportstv:hover,
+.sports:hover,
+.nbcsports:hover,
+.designertech:hover,
+.designnews:hover,
+.skysports:hover{
+    margin: 0 2em;
+}
+nav a:hover{
+    color: #EEEEEE;
+}
+.social path:hover{
+    fill: #07003f;
+}

@@ -1,0 +1,78 @@
+body {
+   background-color: #2c2c2c;
+   color: #ffffff;
+   padding: 2em;
+   font-family: Arial, Helvetica, sans-serif, sans-serif;
+   font-weight: thin;
+   font-size: 11pt;
+}
+table {
+text-align: justify;
+border: 1px solid #6d6d6d;
+border-radius: 0.3em;
+border-spacing: 0;
+}
+td{
+   color: #e4e4e4;
+}
+td, th{
+   padding: 0.2em 0.2em;
+   width: 14em;
+   height: 2em;
+   border-bottom: 0.1px solid #6d6d6d;
+}
+table tr:last-child td:first-child {
+   border-bottom-left-radius: 0.2em;
+}
+table tr:last-child td:last-child {
+   border-bottom-right-radius: 0.2em;
+}
+.dataclass{
+   color: #7d7d7d;
+   text-align: left;
+   padding: 0em 2em 0em 8em;
+   width: 8em;
+}
+.dateth {
+   padding: 0em 2em 0em 8em;
+   width: 8em;
+}
+.space{
+   text-indent: 2em;
+   width: 4em;
+}
+.dot {
+      height: 4px;
+      width: 4px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: inline-block;
+      margin-inline-end: -2px;
+    }
+.gray{
+   background-color: #7d7d7d;
+}
+.etc{
+   text-align: right;
+}
+.triangle{
+   border: 5px solid transparent; border-top: 5px solid #ffffff;
+   content: ''; 
+    position: relative;
+    left: 6px; bottom: -10px;
+}
+.file{
+   padding: 0em 1em;
+}
+.search{
+   background-color: #444444;
+   color: #ffffff;
+   border-radius: 0.2em;
+   border: 0em;
+   padding: 0.3em 1.8em 0.3em 0.5em ;
+   box-align: center;
+   outline:none
+}
+span:last-of-type {
+   margin-inline-end: 0.5em;
+}

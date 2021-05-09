@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>555-3210</td>
+            <td>elon.musk@tesla.com</td>
+        </tr>
+        <tr>
+            <td>Jeff</td>
+            <td>Bezos</td>
+            <td>555-9999</td>
+            <td>jeff.bezos@amazon.com</td>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>555-0101</td>
+            <td>bill.gates@microsoft.com</td>
+        </tr>
+        <tr>
+            <td>Marc</td>
+            <td>Zucerberg</td>
+            <td>555-5555</td>
+            <td>marc.zucerberg@facebook.com</td>
+        </tr>
+    </table>
+    <form class="input" action="#">
+        <p>
+            <input type="text" placeholder="Введіть ваше Ім'я">
+        </p>
+        <p>
+            <input type="text" placeholder="Введіть ваше Прізвище">
+        </p>
+        Якої ви статі ?<br>
+        <input type="radio" name="gender" checked id="man"><label for="man">Чоловіча</label><br>
+        <input type="radio" name="gender" id="woman"><label for="woman">Жіноча</label><br>
+          <p><textarea name="question" rows="8" cols="25" placeholder="Напишіть своє питання:"></textarea></p>
+     <p><select>
+            <option value="Los Santos">Los Santos</option>
+            <option value="San Fierro">San Fierro</option>
+            <option value="Las Venturas">Las Venturas</option>
+            <option value="Vice City">Vice City</option>
+            <option value="Liberty City">Liberty City</option>
+            <option disabled selected>Виберіть місто</option>
+     </select></p>
+     <p>Вибір мови:<br>
+        <input type="checkbox" id="ukr"><label for="ukr"> Українська</label> <br>
+        <input type="checkbox" id="ru"><label for="ru"> Русский</label> <br>
+        <input type="checkbox" id="en"><label for="en"> English</label>
+    </p>
+    <p>
+    <button name="Send"><img src="send.png" alt="Plane" height="20px" width="20px" style="vertical-align: middle"> Відправити</button>
+    </p>
+    </form>
+</body>
+</html>

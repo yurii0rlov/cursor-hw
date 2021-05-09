@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+.btn-primary {
+  background-color: #111B47;
+  border-radius: 2px;
+  width: 10rem;
+  height: 1.625rem;
+  padding: 0;
+  border: 2px solid #091133;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-light .navbar-brand {
+  color: #37447E;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #505F98;
+}
+
+.navbar-nav {
+  order: 1;
+}
+
+.navbar-brand {
+  order: 2;
+  font-weight: 900;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+}
+
+nav {
+  line-height: 1.5rem;
+  color: #505F98;
+}
+
+.btn-primary {
+  order: 3;
+}
+
+.background-image {
+  background-image: url(img/first-bg_hssage_c_scale\,w_1400.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.buttons {
+  margin-top: 4.3125rem;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 132%;
+  letter-spacing: 1px;
+  color: #091133;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+}
+
+.purchaseUI {
+  width: 11.825rem;
+  height: 2.25rem;
+}
+
+.learnmore {
+  background: transparent;
+  color: #091133;
+}
+
+.container {
+  max-width: none;
+  padding-left: 11.25%;
+}
+
+@media (min-width: 992px) {
+  .phone-ver {
+    display: none;
+  }
+
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+
+  .navbar {
+    padding: 0.75rem 11.45%;
+  }
+
+  .navbar-nav {
+    gap: 3.75rem;
+  }
+
+  .title {
+    margin-top: 15.5rem;
+    padding-right: 50%;
+  }
+
+  .introduce-block {
+    padding-bottom: 24rem;
+  }
+
+  .description {
+    padding-right: 60%;
+  }
+}
+@media (max-width: 332px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 151px) {
+  html {
+    font-size: 0.25rem;
+  }
+}
+@media (max-width: 992px) {
+  .desctop-ver {
+    display: none;
+  }
+
+  .navbar-brand {
+    order: 0;
+  }
+
+  .title {
+    margin-top: 7.75rem;
+    padding-right: 20%;
+  }
+
+  .introduce-block {
+    padding-bottom: 12rem;
+  }
+
+  .background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .description {
+    padding-right: 30%;
+    background: linear-gradient(90deg, rgba(80, 95, 152, 0.381390056) 0%, rgba(231, 236, 255, 0.681109944) 86%);
+  }
+}
+.col-6 .title {
+  margin-top: 10rem;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.imagecontainer {
+  padding-right: 11.25%;
+}
+
+.title-text {
+  margin-top: 10rem;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  color: #091133;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+  .wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+}
+.col-sm svg {
+  width: 2.25em;
+  margin-bottom: 0.8rem;
+}
+
+.title-sketch {
+  font-weight: 500;
+  line-height: 1.625rem;
+  color: #091133;
+}
+
+.description-sketch {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #5D6970;
+  padding-right: 10%;
+}
+
+.imagecontainer {
+  padding-top: 10em;
+}
+
+@media (max-width: 992px) {
+  .imagecontainer {
+    padding-top: 2rem;
+  }
+
+  .title-text {
+    margin-top: 5rem;
+    text-align: start;
+  }
+
+  .description-text {
+    text-align: start;
+  }
+}
+@media (min-width: 992px) {
+  .reverse {
+    padding-right: 11.25%;
+  }
+}
+.description-text {
+  line-height: 162%;
+  color: #6F7CB2;
+  white-space: pre-wrap;
+}
+
+.col-6 button {
+  width: 9.375rem;
+  height: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.col-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(img/Rectangle.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+@media (max-width: 992px) {
+  .col-12 {
+    background-size: cover;
+  }
+}
+.col-12 .description-text {
+  padding: 0 24%;
+  text-align: center;
+}
+
+.col-12 .title-text {
+  text-align: center;
+}
+
+.design-kit {
+  color: #37447E;
+  margin-bottom: 3.75em;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 3.125em;
+  line-height: 132%;
+  color: #222F65;
+  margin-bottom: 0;
+}
+
+.promotext {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #5D6970;
+}
+
+.col-4 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  background: #E7ECFF;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+}

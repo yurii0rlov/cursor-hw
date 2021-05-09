@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Oswald:wght@400;500;600;700&family=Raleway:wght@500&display=swap");
+.creativing, .photoshooting, .filming, header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.qty, .bg-text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.creativing, .photoshooting, .filming {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.moreworks button, .gravity-prod button {
+  border-radius: 0px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 129%;
+  text-transform: capitalize;
+  padding: 1rem;
+  background-color: transparent;
+  margin-top: 2rem;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.navbar-brand img {
+  width: 6.25rem;
+  height: 2.75rem;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 178%;
+  text-transform: uppercase;
+  color: #C7C7C7;
+}
+
+.language {
+  margin-left: auto;
+}
+
+.navbar-nav {
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 315px) {
+  body {
+    font-size: 8px;
+  }
+}
+body {
+  margin-top: 5.5rem;
+  background-color: black;
+}
+
+header {
+  background-image: url(img/header-bg.png);
+}
+
+.gravity-prod {
+  padding: 11.8125rem 1.875rem 2.8125rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gravity-prod p {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.gravity-prod svg {
+  width: 1.5625rem;
+  margin-top: 11.125rem;
+  margin-bottom: 4rem;
+}
+
+aside {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  body {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .language {
+    order: 3;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+  }
+
+  .gravity-prod p {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 144%;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    padding: 0 25%;
+    margin-bottom: 2rem;
+  }
+
+  .gravity-prod button {
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    color: #010101;
+    font-size: 1.125rem;
+    line-height: 133%;
+    font-weight: 600;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+
+  .gravity-prod svg {
+    margin-top: 8rem;
+    width: 2.1875rem;
+  }
+}
+.achivements {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: #FFFFFF;
+  margin: 3.5rem 0;
+}
+
+.col {
+  position: relative;
+}
+
+.bg-text {
+  top: 10%;
+  font-size: 2rem;
+  line-height: 112%;
+  text-align: right;
+  color: #1E1E1E;
+  opacity: 0.7;
+  text-align: start;
+  position: absolute;
+}
+
+.qty {
+  font-size: 2.75rem;
+  line-height: 114%;
+  font-family: "Oswald", sans-serif;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.text {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+  z-index: 2;
+}
+
+.description {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: start;
+  text-transform: uppercase;
+  padding-top: auto;
+  z-index: 2;
+  padding-left: 0.6rem;
+}
+
+.filming {
+  background-image: url(img/filming.png);
+  min-height: 9.5rem;
+}
+
+.photoshooting {
+  background-image: url(img/photoshooting.png);
+  min-height: 9.5rem;
+}
+
+.creativing {
+  background-image: url(img/creativing.png);
+  min-height: 9.5rem;
+}
+
+.whatwedo {
+  padding: 0 1rem 3.5rem 1rem;
+  gap: 0.8125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.we-do {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 137%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .whatwedo {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .navbar-brand img {
+    margin-left: 7.5rem;
+  }
+}
+.title,
+.historytext {
+  color: #FFFFFF;
+  white-space: pre-wrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 162%;
+}
+
+.history {
+  background-image: url(img/historybg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.historyimage {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .historyimage {
+    display: block;
+    max-width: 50%;
+  }
+
+  .history {
+    background-image: none;
+    display: flex;
+  }
+
+  .historytextblock {
+    background: linear-gradient(270deg, rgba(37, 35, 35, 0.28) 9.38%, rgba(0, 0, 0, 0.4) 40.75%);
+  }
+}
+.gallery {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8125rem;
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+  opacity: 0.8;
+}
+
+.photodescription {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  white-space: pre-wrap;
+}
+
+.rafting-image,
+.bigimg hr,
+.bigimg button {
+  display: none;
+}
+
+@media (max-width: 412px) {
+  .bestpilot {
+    bottom: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    grid-gap: 5px;
+  }
+
+  .photodescription {
+    display: none;
+  }
+
+  .rafting-image,
+.bigimg hr,
+.bigimg button,
+.bigimg .photodescription {
+    display: block;
+  }
+
+  .bigimg .photodescription {
+    font-size: 2rem;
+    line-height: 106%;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bigimg {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+  }
+
+  .bigimg hr {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 30%;
+    top: 50%;
+    background-color: #FFFFFF;
+  }
+
+  .bigimg button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 11.5625rem;
+    top: 60%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 171%;
+    color: #010101;
+  }
+}
+.moreworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreworks button {
+  width: 40%;
+  height: 2rem;
+  padding: 0;
+  margin-bottom: 3.5rem;
+}
+
+.parthners {
+  background-color: #FFFFFF;
+  padding: 1.5rem 1rem 2.5rem 1.5rem;
+}
+
+.carousel-img {
+  width: 60%;
+  display: flex;
+  cursor: pointer;
+}
+
+.carousel-item.active {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  row-gap: 2.5rem;
+  column-gap: 1rem;
+  justify-items: center;
+  justify-content: center;
+  grid-auto-flow: row;
+  align-items: center;
+}
+
+.carousel-header {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.carousel-title {
+  margin-right: auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+  line-height: 144%;
+  color: #010101;
+  margin-bottom: 0;
+}
+
+.carousel-title img {
+  width: 100%;
+}
+
+.arrownext {
+  margin-left: 2.5rem;
+}
+
+.desctop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+
+  .desctop {
+    display: flex;
+  }
+
+  .carousel-item.active {
+    grid-template-columns: repeat(6, 15%);
+  }
+
+  .carousel-title {
+    font-size: 1.75rem;
+    line-height: 121%;
+  }
+
+  .arrowpreview,
+.arrownext {
+    width: 1rem;
+  }
+
+  .parthners {
+    padding: 7.5rem;
+  }
+
+  .carousel-header {
+    margin-bottom: 4rem;
+  }
+}
+.rewievs {
+  background-color: black;
+  padding: 1.5rem 1rem 0 1.5rem;
+}
+
+.rewievblock {
+  display: flex;
+  flex-direction: column;
+  background: #1E1E1E;
+  color: #FFFFFF;
+  padding: 1rem 1rem 2rem 1rem;
+  height: auto;
+}
+
+.rewiever {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewer-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.rewievs .carousel-header .carousel-title {
+  color: #FFFFFF;
+}
+
+.rewiever-name {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 133%;
+}
+
+.whois-rewiever {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 167%;
+}
+
+.rewiev-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 143%;
+}
+
+.whitearrow path {
+  color: #FFFFFF;
+}
+
+.review-carousel.active {
+  display: flex;
+}
+
+.thomas-rewiev-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.lenovo-rewiev-img {
+  width: 8.625rem;
+  height: 3rem;
+}
+
+.landrover-rewiev-img {
+  width: 5.8125rem;
+  height: 3rem;
+}
+
+.colorinvert {
+  background-color: #C7C7C7;
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .carousel-item.active.desctop-rewiev {
+    grid-template-columns: repeat(3, 30%);
+    align-items: unset;
+    gap: 0.25rem;
+  }
+
+  .rewievs {
+    padding: 7.5rem;
+  }
+}
+.mountains {
+  padding: 1rem 0 0 0.1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background: linear-gradient(180deg, #010101 11.52%, rgba(41, 40, 40, 0.76) 100%);
+  z-index: 0;
+}
+
+.highmountain {
+  width: 10.3125rem;
+  position: relative;
+  bottom: -1.875rem;
+}
+
+.smallmountain {
+  width: 4rem;
+  position: relative;
+  bottom: -0.375rem;
+  left: -2rem;
+}
+
+@media (min-width: 992px) {
+  .highmountain {
+    width: 19rem;
+    bottom: -3.5rem;
+  }
+
+  .smallmountain {
+    width: 7.375rem;
+    bottom: -0.1rem;
+    left: -3.2rem;
+  }
+}
+.footer-nav,
+.gravityproduction {
+  display: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  padding-right: 1rem;
+}
+
+.footer-links {
+  z-index: 2;
+  position: relative;
+}
+
+.footer-links img {
+  position: absolute;
+  width: 7.0625rem;
+  top: -100%;
+  left: 4%;
+}
+
+@media (min-width: 992px) {
+  .footer-nav,
+.gravityproduction {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .footer-nav ul {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .footer-links {
+    padding: 2.5rem 0 2.1875rem 0;
+  }
+
+  .socials {
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
+
+  .socials svg {
+    width: 1.5rem;
+  }
+
+  .gravityproduction {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .footer-links img {
+    top: -1%;
+    width: 8.9375rem;
+    left: 5%;
+  }
+}
+.active .nav-link {
+  color: white;
+}
+
+.whatwedo div:hover,
+.image:hover,
+.carousel-img:hover,
+svg:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.bigimg:hover {
+  opacity: 1;
+}
+
+a:hover {
+  color: #FFFFFF;
+}

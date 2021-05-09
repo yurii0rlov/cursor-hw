@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+@font-face{ 
+	font-family: 'Baloo-Regular-webfont';
+	src: url('fonts/Baloo-Regular-webfont.eot');
+	src: url('fonts/Baloo-Regular-webfont.eot') format('eot'),
+	     url('fonts/Baloo-Regular-webfont.woff') format('woff'),
+	     url('fonts/Baloo-Regular-webfont.ttf') format('truetype'),
+	     url('fonts/Baloo-Regular-webfont.svg#webfont') format('svg');
+}
+body{
+    font-size: 100%;
+    margin: 0;
+}
+a { 
+    text-decoration: none;
+    margin-bottom: 4em;
+    color: #000;
+   } 
+
+main{   
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    padding: 1.5em 4.24em 0 2em;
+}
+aside{
+    background-color: black;
+    width: 8.25em;
+    height: 53.25em;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 0 2.5em 0;
+    box-shadow: 0.875em 0 1.25em 0 rgb(0 0 0 / 50%);
+}
+aside a img{
+    max-width: 1.75em;
+    display: block;
+    height: auto;
+}
+.logo{
+    font-family: 'Baloo-Regular-webfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 1.59em;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+}
+.logout{
+    margin-top: 7.5em;
+}
+.maincolumn{
+    padding-top: 1.9em;
+    padding-left: 4.5em;
+}
+.greetingheader{
+    background: #F5F5F7;
+    border-radius: 0.875em;
+    width: 38.75em;
+    height: 10em;
+    display: flex;
+    margin-bottom: 1.5em;
+}
+h1{
+    font-family: 'Baloo-Regular-webfont';
+    font-size: 2.25em;
+    color: #000000;
+    padding: 1.27em 0 0 0.86em;
+    margin: 0;
+}
+.greetingtext{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    margin: 0 0 0 1.9em;
+}
+.studentimage{
+    position: relative;
+    left: 20%;
+    bottom: 20%;
+    height: 120%;  
+}
+.currentcourse{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0 0.5em 0.5em;
+    align-items: center;
+    width: 31.26625em;
+    height: 5em;
+    background: #F5F5F7;
+    border-radius: 0.875em;
+    margin-right: 1.4775em;
+}
+.courseimage{
+    width: 4em;
+    height: 4em;
+    background: #FFFFFF;
+    border-radius: 0.75em;
+    padding: 1em;
+    margin-right: 1.5em;
+}
+h3{
+    font-family: 'Baloo-Regular-webfont';
+    line-height: 1.625em;
+    color: #000000;
+    margin: 0;
+}
+.courseauthor,
+.percents,
+.timetopass,
+.rating{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8125em;
+    line-height: 0.9375em;
+    margin-top: 1px;
+}
+.courseprogress{
+    display: flex;
+    background-image: url(img/progresscircle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 2.5em;
+    height: 2.5em;
+    
+}
+.percents{
+    width: 50%; 
+    margin: auto;
+}
+.continuebutton{
+    margin:0 1.49em 0 0;
+    width: 7.5em;
+    height: 2.5em;
+    background: #000000;
+    border-radius: 0.5em;
+}
+.buttontext{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8125em;
+    line-height: 0.9375em;
+    color: white;
+    text-align: center;
+    
+}
+.mycourse,
+.naviarrows,
+.coursetime
+{
+    
+    display: flex;
+}
+.previouscoursebutton,
+.nextcoursebutton{
+    margin-right: 1em;
+    display:block;
+    max-width:2em;
+    height:auto;
+}
+.nextcoursebutton{
+    margin-right: 0;
+}
+.coursetypepicture{
+    display:block;
+    max-width:2.5em;
+    height:auto;
+}
+.nextcoursebutton,
+.loupe,
+.downarrow,
+.notification,
+.previouscoursebutton{
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out; 
+}
+.coursestitle{
+    font-family: 'Baloo-Regular-webfont';
+    font-size: 1.5em;
+    line-height: 2.375em;
+    margin: 1.66667em 0 0.66667em 0;
+}
+.coursesfilter{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo-Regular-webfont';
+    line-height: 1.625em;
+}
+.activefilter,
+.disactivefilter{
+    display: inline;
+    margin-left: 2em;
+    opacity: .3;
+}
+.activefilter{
+    margin: 0;
+    opacity: 1;
+}
+.coursesfiltertext{
+    margin-bottom: 0.64em;
+}
+.avaliblecourseslist{
+    display: flex;
+    flex-direction: column;
+}
+.avaliblecourse{
+    display: grid;
+    grid-template-columns: 6.03125em 11.846875em 7.48375em 4.4em 8.988125em;
+    padding: 0.5em 0 0.5em 0.5em;
+    width: 38.75em;
+    height: 5em;
+    background: #F5F5F7;
+    border-radius: 0.875em;
+    align-items: center;
+}
+.avaliblecourse + .avaliblecourse{
+    margin-top: 1em;
+}
+.clocks{
+    margin-right: 0.5em;
+}
+.coursetime{
+    align-items: center;
+}
+.courserating,
+.top-bar,
+.avatar-container,
+.courseinwork,
+.filtergraph{
+    display: flex;
+    align-items:center
+}
+.timetopass,
+.rating{
+    margin: 0;
+}
+.rating{
+    margin-left: 0.625em;
+    display: flex;
+    align-items: center;
+}
+.figma{
+    padding: 1em 1.333125em;
+}
+.figmapicture{
+    max-width: 1.5em;
+}
+.ratingimage{
+    width: 0.674375em;
+    height: 1em;
+    margin-bottom: 0.375em;
+}
+.sidecolumn{
+    padding-top: 1.9em;
+    padding-left: 4em;
+    display: flex;
+    flex-direction: column;
+}
+.searchblock{
+    width: 18.75em;
+    height: 2.5em;
+    background: #F5F5F7;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    padding: 0.67125em 0 0.54625em 0.988125em;
+}
+.search{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-family: 'Baloo-Regular-webfont';
+    outline:none;
+    margin-left: 1em;
+    width: 18.5em;
+}
+.notification{
+    background-image: url(img/notification.svg);
+    margin-left: 2.25em;
+    width: 1.914375em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 1em;
+    margin-right: 1.125em;
+    padding:0.67125em 0 1.54625em 0.988125em;
+}
+.elipse{
+    background: #F45B5B;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.375em;
+    font-size: 0.625em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.avatar{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+.top-bar{
+    margin-bottom: 1.479375em;
+}
+.coursescomplete,
+.coursesinprogress{
+    width: 13em;
+    height: 6.020625em;
+    background: #F5F5F7;
+    border-radius: 0.875em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coursescomplete{
+    margin-right: 1.48625em;
+}
+.quanity{
+    font-family: 'Baloo-Regular-webfont';
+    font-size: 4em;
+    line-height: 6.375em;
+    color: #000000;
+}
+.quanitydescription{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    color: #000000;
+    margin-left: 0.6875em;
+    margin-bottom: 0.5em;
+}
+.graphfilter{
+    margin-left: 1.5em;
+}
+.selectrange{
+    width: 6.76923077em;
+    height: 2.46153846em;
+    background: #F5F5F7;
+    border-radius: 0.5em;
+    background-image: url(img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 4.98923077em;
+    background-position-y: 50%;
+    padding-left: 1.25076923em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.8125em;
+    line-height: 0.9375em;
+    color: #000000;
+    outline:none;
+    margin-left: 9.8461538em;
+    border: 0;
+}
+.yourstatisticgraph{
+    width: 28.099375em;
+    height: 16.634375em;
+    margin-top: 1.881875em;
+    margin-bottom: 3.075em;
+}
+.gopremium{
+    width: 27.5em;
+    background: #F5F5F7;
+    border-radius: 14px;
+    background-image: url(img/gopremiumbrain.svg);
+    background-repeat: no-repeat;
+    background-size: 7.8125em;
+    background-position-y: 2.326875em;
+    background-position-x: 16.6875em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9em 14.831875em 0.98625em 1.480625em;
+}
+.premiumtitle,
+.premiumdescription{
+    margin: 0;
+}
+.premiumbtn{
+margin: 1.11em 0 0 0;
+}
+.premiumdescription{
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+.continuebutton:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.disactivefilter:hover{
+    opacity: 1;
+}
+.nextcoursebutton:hover{
+    transform:rotate(360deg);
+}
+.loupe:active{
+    transform:rotate(360deg);
+}
+.downarrow:active{
+    transform:rotate(180deg);
+}
+.notification:hover{
+    transform:rotate(360deg);
+}
+.previouscoursebutton:hover{
+    transform:rotate(360deg);
+}
+@media (min-width:1720px) {
+    body{
+        font-size: 125%;
+    }
+}
+@media (max-width:1080px) {
+    body{
+        font-size: 75%;
+    }
+}
+@media (max-width:720px) {
+    body{
+        font-size: 50%;
+    }
+}

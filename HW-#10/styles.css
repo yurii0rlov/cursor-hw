@@ -1,0 +1,162 @@
+main{
+    display: flex;
+}
+.openvader path{
+    transition-duration: 10s;
+    fill: rgba(167, 6, 6, 0.397);
+}
+.starwars{
+    background: black;
+    width: 50vw;
+    height: 50vw;
+}
+.newtonspendulum{
+    display: flex;
+    flex-direction: column;
+    background: seashell;
+    width: 50vw;
+    height: 50vw;
+}
+.skywalker{
+    background-image: url(img/luke-skywalker_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sword{
+    width: 100px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    padding-left: 10px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.firstsword{
+    top: 150px;
+    left: 15%;
+}
+.secondsword{
+    top: 130px;
+    left: 15%;
+    transform:rotate(180deg);
+}
+.thirdsword{
+    top: 110px;
+    left: 15%;
+}
+.handle{
+    width: 20px;
+    height: 3px;
+    background: black;
+}
+.open1{
+    transform:rotate(-45deg)
+}
+.open2{
+    transform: rotate(225deg);
+    top:150px
+}
+.open3{
+    top:0;
+    opacity: 0;
+}
+.swords:hover .open1{
+    transition-duration: 1s;
+    box-shadow: 0px 0px 6px 8px rgba(0, 255, 30, 0.38);
+}
+.swords:hover .open2{
+    transition-duration: 1s;
+    box-shadow: 0px 0px 6px 8px rgba(255, 22, 0, 0.38);
+}
+
+.balls,
+.shadows{
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    cursor: pointer;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;   
+}
+
+.ball:nth-child(1){
+    background: #4158D0;
+    animation-name: firstball;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.ball:nth-child(2){
+    background: #417ae4;
+}
+.ball:nth-child(3){
+    background: #41e4c1;
+}
+.ball:nth-child(4){
+    background: #41e485;
+}
+.ball:nth-child(5){
+    background: #4fe441;
+}
+.ball:nth-child(6){
+    background: #8ae441;
+}
+.ball:nth-child(7){
+    background: #d9e441;
+    animation-name: lastball;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.shadows{
+    margin-top: 5%;
+}
+.shadow{
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.137);
+    position: relative;
+}
+.shadow:nth-child(1){
+    animation-name: firstshadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.shadow:nth-child(7){
+    animation-name: lastshadow;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes firstball{
+    0%  {left:0; top:0;}
+    25% {left:-40px; top:-40px;}
+    50% {left:0; top:0;}
+    100% {left:0; top:0;}
+}
+@keyframes lastball{
+    0%  {right:0; top:0;}
+    25% {right:-40px; top:-40px;}
+    50% {right:0; top:0;}
+    100% {right:0; top:0;}
+}
+@keyframes firstshadow {
+    0%  {left:0;}
+    25% {left:-40px; opacity: .25;}
+    50% {left:0;}
+    100% {left:0;}
+}
+@keyframes lastshadow {
+    0%  {right:0;}
+    25% {right:-40px; opacity: .25;}
+    50% {right:0;}
+    100% {right:0;}
+}

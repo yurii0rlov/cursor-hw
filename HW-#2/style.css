@@ -1,0 +1,16 @@
+table {
+    position: ;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+ }
+ th {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(173, 5, 5);
+ }
+ td {
+    border: 1px solid rgb(255, 255, 255);
+    color: green;
+ }
+ .input{
+    color: rgb(32, 31, 31);
+ }
