@@ -100,7 +100,7 @@ color: $boldblue;
 
     }
 }
-@media (max-width:332px) {
+@media (max-width:440px) {
     html{
         font-size: 0.5rem;
 }
@@ -217,15 +217,8 @@ white-space: pre-wrap;
     justify-content: center;
     align-items: center;
     background: url(img/Rectangle.svg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100vw;
+
 }
-@media (max-width:992px) {
-    .col-12 {
-        background-size: cover;
-    }
-    }
 .col-12 .description-text{
     padding: 0 24%;
     text-align: center;
@@ -253,10 +246,70 @@ white-space: pre-wrap;
     align-items: center;
     justify-content: space-between;
 }
+.col-12 button{
+    margin-bottom: 11rem;
+}
 footer{
     background: #E7ECFF;
 }
 .bottom{
     display: flex;
+    flex-direction: column;
+    padding: 0 11.5%;
+}
+.bottom-top,
+.bottom-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.25rem;
+    flex-wrap: wrap;
+}
+.bottom-bottom{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.bottom-top p{
+    margin:0;
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 171%;
+    color: $maingray;
+}
+.bottom-top a{
+    margin:0;
+    color: #37447E;;
+}
+.bottom-top button {
+    width: 6.8125rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 150%;
+    height: 1.5rem;
+}
+.bottom hr{
+    height: 1px;
+    width: 100%;
+    background: #CDD1D4;
+}
+.bottom-bottom .navbar-nav{
     flex-direction: row;
+    gap: 3.75rem;
+    font-family: $roboto;
+    font-size: 0.875rem;
+    line-height: 171%;
+}
+.bottom-bottom .navbar-nav .nav-item .nav-link{
+    color: #929ECC
+}
+.socials{
+    order: 2;
+    display: flex;
+    gap: 1.875rem;
+}
+
+svg:hover{
+    opacity: .8;
+    cursor: pointer;
 }
