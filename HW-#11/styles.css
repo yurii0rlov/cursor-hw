@@ -246,6 +246,10 @@ nav {
   background: url(img/Rectangle.svg);
 }
 
+.mobile-login {
+  width: 100%;
+}
+
 .col-12 .description-text {
   padding: 0 24%;
   text-align: center;
